@@ -5,6 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sandrine Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+/* @keyframes slide{
+  0%{
+    transform: translateX(0);
+  }
+    25%{
+    transform: translateX(0);
+  }
+    30%{
+    transform: translateX(-100%);
+
+  }
+    50%{
+    transform: translateX(-100%);
+  }
+  55%{
+    transform: translateX(-200%);
+  }
+} */
+    
+      
+    
+  </style>
+
 </head>
 <body class="bg-black text-white font-sans">
  
@@ -15,8 +45,8 @@
       <h1 class="text-4xl font-bold text-purple-400 italic ">Sandrine</h1>
       <ul class="flex space-x-6">
         <li><a href="#home" class="hover:text-purple-400">Home</a></li>
-        <li><a href="#projects" class="hover:text-purple-400">Projects</a></li>
         <li><a href="#about" class="hover:text-purple-400">About</a></li>
+        <li><a href="#projects" class="hover:text-purple-400">Projects</a></li>
        <button class="text-white border-2 border-white rounded-full w-20 h-8 bg-purple-700 transition hover:bg-purple-400 animate-bounce duration-100"> <li><a href="#contact" class="hover:text-purple-400">Contact</a></li></button>
       </ul>
     </div>
@@ -31,60 +61,94 @@
    hi my name is ingabire sandrine i'm software developer <br> this is my Portfolio its contain home, my projects, <br> about and contact. hope this Portfolioits contain all info you <br> want to know about me  
     </h1>
     <div class="flex justify-end mt-2 md:mt-0 md:ml-6  ">
-        <img src="WhatsApp Image 2025-09-17 at 14.38.18_0522fde6.jpg" alt="Sandrine" class="absolute right-5 top-4  rounded-full border-4 border-purple-700 w-40 h-36 shadow-white shadow-lg ">
+        <img src="WhatsApp Image 2025-09-17 at 14.38.18_0522fde6.jpg" alt="Sandrine" class="absolute right-5 top-4  rounded-full border-4 border-purple-700 w-40 h-36 shadow-white shadow-lg animate-pulse-scale" >
       </div>
+       <style>
+          @keyframes pulse-scale{
+            0%, 100%{transform: scale(1);}
+            50%{transform: scale(1.2);}
+          }
+          .animate-pulse-scale{
+            animation: pulse-scale 2s infinite ease-in-out;
+          }
+        </style>
             
   </fieldset>
   </section>
 
+     <!-- About Section -->
+  <section id="about" class="px-6 py-20">
+    <div class="bg-purple-500 p-6 rounded-xl flex flex-col md:flex-row items-center md:items-start">
+      <div class="flex-1">
+        <h2 class="text-2xl font-semibold mb-3 ">About</h2>
+        <p class="capitalize " style="shape-outside: circle(45%);">
+          i'm ingabire sandrine, a dedicated software developer with skills in react,node.js,MY SQL and UI/UX. i am currently looking for opportunitiesto apply and knowledge and grow professionally.Passionate front-end developer with a love for creating intuitive and responsive web experiences. Creative UI/UX designer focused on delivering clean and user-friendly interfaces. I enjoy solving complex problems and turning ideas into real-world applications
+        </p>
+      </div>
+      <div class="mt-6 md:mt-0 md:ml-6">
+        <img src="WhatsApp Image 2025-09-17 at 14.38.18_0522fde6.jpg" alt="Sandrine" class="rounded-full border-4 border-purple-700 w-36 h-36 ">
+      </div>
+    </div>
+  </section>
+
   <!-- Projects Section -->
   <section id="projects" class="px-6 py-20">
-    <h2 class="text-2xl font-semibold mb-6 capitalize">my skills</h2>
-    <div class="grid md:grid-cols-2 gap-6">
+    <!-- <h2 class="text-2xl font-semibold mb-6 capitalize">my skills</h2> -->
+    <div class="text-center">
       <div class="bg-purple-900 p-6 rounded-xl">
-        <h3 class="font-bold text-lg mb-2 capitalize">front-end developer</h3>
-        <p class="text-gray-300">currently seeking opportunities in web development and software engineering</p>
-        <img src="What-is-Front-end-Development_-A-Complete-Guide.jpeg" alt=""class="w-96 h-40">
+        <h6 class="text-black capitalize font-bold"><span class="text-black "> -></span>my favorite tools</h6>
+        <h1 class="font-bold text-2xl mb-2 capitalize italic">Exploring the tools</h1>
+        <h1 class="text-black font-bold text-2xl capitalize ">behind my design</h1>
+        <div class="p1  grid grid-cols-5 gap-2 m-6  " >
+       <h1 class="flex-col gap-3 text-2xl font-extrabold bg-black h-56 w-40 flex items-top  justify-center p-4 transform transition duration-400 hover:scale-110 hover:shadow-xg" style="border-radius: 50px;"> <img src="download.jpeg" alt="" class="rounded-2xl" style="height: 100px; width: 110px;"><span class="font-bold">Figma</span>  80% </h1>
+              <h1 class="flex-col gap-3 text-2xl font-extrabold bg-black h-56 w-40 flex items-top  justify-center p-4 transform transition duration-400 hover:scale-110 hover:shadow-xg " style="border-radius: 50px;"> <img src="download (1).png" alt="" class="rounded-2xl" style="height: 100px; width: 110px;"><span class="font-bold">Tailwind</span>  92% </h1>
+              <h1 class="flex-col gap-3 text-2xl font-extrabold bg-black h-56 w-40 flex items-top  justify-center p-4 transform transition duration-400 hover:scale-110 hover:shadow-xg" style="border-radius: 50px;"> <img src="download.png" alt="" class="rounded-2xl" style="height: 100px; width: 110px;"><span class="font-bold">CSS</span>  95% </h1>
+                            <h1 class="flex-col gap-3 text-2xl font-extrabold bg-black h-56 w-40 flex items-top  justify-center p-4 transform transition duration-400 hover:scale-110 hover:shadow-xg" style="border-radius: 50px;"> <img src="html.jpeg" alt="" class="rounded-2xl" style="height: 100px; width: 110px;"><span class="font-bold">HTML</span>  99% </h1>
+                                          <h1 class="flex-col gap-3 text-2xl font-extrabold bg-black h-56 w-40 flex items-top  justify-center p-4 transform transition duration-400 hover:scale-110 hover:shadow-xg" style="border-radius: 50px;"> <img src="download (2).png" alt="" class="rounded-2xl" style="height: 100px; width: 110px;"><span class="font-bold">Javascript</span>  62% </h1>
+
+
+       
+        </div>
+
+       
+       <!-- on div grid md:grid-cols-2 gap-6 -->
+        <!-- <p class="text-gray-300">currently seeking opportunities in web development and software engineering</p> -->
+        <!-- <img src="What-is-Front-end-Development_-A-Complete-Guide.jpeg" alt=""class="w-96 h-40">
       </div>
       <div class="bg-purple-400 p-6 rounded-xl">
         <h3 class="font-bold text-lg mb-2 capitalize">UI/UX design</h3>
         <p class="text-gray-900 truncate capitalize ">trust my work i'm open to new opportunities- let's work together!</p><br>
          <img src="purple-modern-&-minimal-ui-ux-design-services-template-6ca421de1abe8059ada2bcb09dba17b1_screen.jpg" alt=""class="w-96 h-40">
-      </div>
-    </div>
+      </div>-->
+    </div> 
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="px-6 py-20">
-    <div class="bg-purple-500 p-6 rounded-xl flex flex-col md:flex-row items-center md:items-start">
-      <div class="flex-1">
-        <h2 class="text-2xl font-semibold mb-3 ">About</h2>
-        <p class="capitalize">
-          i'm ingabire sandrine, a dedicated software developer with skills in react,node.js,MY SQL and UI/UX. i am currently looking for opportunitiesto apply and knowledge and grow professionally.
-        </p>
-      </div>
-      <div class="mt-6 md:mt-0 md:ml-6">
-        <img src="WhatsApp Image 2025-09-17 at 14.38.18_0522fde6.jpg" alt="Sandrine" class="rounded-full border-4 border-purple-700 w-36 h-36 animate-pulse">
-      </div>
-    </div>
-  </section>
+
 
   <!-- Contact Section -->
   <section id="contact" class="px-6 py-20">
-    <h2 class="text-2xl font-semibold mb-6">Contact</h2>
+  
+     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 ">
     <form class="space-y-4 max-w-2xl">
+     
       <div class="grid md:grid-cols-2 gap-4">
         <input type="text" placeholder="Name" class="w-full p-3 rounded-lg bg-gray-800 border border-gray-600">
         <input type="email" placeholder="Email" class="w-full p-3 rounded-lg bg-gray-800 border border-gray-600">
       </div>
-      <textarea placeholder="Message" rows="5" class="w-full p-3 rounded-lg bg-gray-800 border border-gray-600"></textarea>
+      <textarea placeholder="message" rows="5" class="w-full p-3 rounded-lg bg-gray-800 border border-gray-600"></textarea>
       <button type="submit" class="px-6 py-3 bg-purple-500 hover:bg-purple-600 rounded-lg font-semibold">
         Send
       </button>
+          
     </form>
-     
+    <div class="px-24 text-lg font-bold">
+    <h1 class="text-purple-400 text-2xl font-extrabold">Contact Me</h1><br>
+    <h4>Email Us: ingasandrine031@gmail.com</h4>
+     <h4>Phone NO: 0783827849</h4>
+      <h4>Visit Us: KG 577 Street,Kigali</h4>
+     </div>
+     </div>
   </section>
-
   
   <script>
      const body = document.getElementById("body");
