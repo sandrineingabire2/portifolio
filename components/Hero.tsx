@@ -42,10 +42,10 @@ export default function Hero() {
             </h1>
             <div className="flex flex-wrap gap-3 text-lg lg:text-xl">
               <span className="bg-[#6b9071]/20 text-gray-200 px-5 py-2.5 rounded-xl border border-[#6b9071]/20 font-medium">
-                💻 Software Developer
+                Software Developer
               </span>
               <span className="bg-[#6b9071]/20 text-gray-200 px-5 py-2.5 rounded-xl border border-[#6b9071]/20 font-medium">
-                🎨 UI/UX Designer
+                UI/UX Designer
               </span>
             </div>
           </div>
@@ -57,16 +57,31 @@ export default function Hero() {
           <div className="flex flex-wrap gap-5 pt-6">
             <Link 
               href="/projects" 
-              className="group relative px-10 py-4 bg-[#6b9071] text-white rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#6b9071]/50"
+              className="group relative px-10 py-4 bg-[#6b9071] text-white rounded-xl font-bold text-lg overflow-hidden transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:shadow-[#6b9071]/50 hover:rotate-1 transform-gpu"
             >
-              <span className="relative z-10">🚀 View Projects</span>
+              <div className="absolute inset-0 bg-[#8A9A5B] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-white/20 scale-0 group-hover:scale-100 transition-transform duration-700 rounded-full"></div>
+              <div className="absolute -inset-1 bg-[#6b9071] rounded-xl blur opacity-0 group-hover:opacity-75 transition-opacity duration-500 animate-pulse"></div>
+              <span className="relative z-10 flex items-center gap-2 group-hover:translate-x-1 transition-transform duration-300">
+                View Projects
+                <svg className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </span>
             </Link>
             <a 
               href="/cv.pdf" 
               download
-              className="px-10 py-4 border-2 border-[#8A9A5B]/50 text-[#8A9A5B] rounded-xl font-bold text-lg hover:bg-[#8A9A5B]/10 hover:border-[#8A9A5B] transform transition-all duration-300 hover:scale-105"
+              className="group relative px-10 py-4 border-2 border-[#8A9A5B]/50 text-[#8A9A5B] rounded-xl font-bold text-lg overflow-hidden transition-all duration-500 hover:scale-110 hover:border-[#6b9071] hover:-rotate-1 transform-gpu"
             >
-              📄 Download CV
+              <div className="absolute inset-0 bg-gradient-to-r from-[#8A9A5B]/10 to-[#6b9071]/10 scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-right"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#8A9A5B] to-[#6b9071] rounded-xl blur opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
+              <span className="relative z-10 flex items-center gap-2 group-hover:text-[#6b9071] group-hover:-translate-x-1 transition-all duration-300">
+                <svg className="w-5 h-5 group-hover:-translate-x-2 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Download CV
+              </span>
             </a>
           </div>
 

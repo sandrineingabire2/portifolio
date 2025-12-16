@@ -1,12 +1,20 @@
 import { NextResponse } from 'next/server';
 
-let contacts: any[] = [];
+interface Contact {
+  id: number;
+  name: string;
+  email: string;
+  message: string;
+  created_at: string;
+}
+
+let contacts: Contact[] = [];
 
 export async function POST(request: Request) {
   try {
     const { name, email, message } = await request.json();
     
-    const contact = {
+    const contact: Contact = {
       id: Date.now(),
       name,
       email,

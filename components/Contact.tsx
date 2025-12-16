@@ -36,11 +36,7 @@ const contactInfo = [
   },
 ];
 
-const socialLinks = [
-  { name: 'GitHub', link: 'https://github.com' },
-  { name: 'LinkedIn', link: 'https://www.linkedin.com/in/ingabire-sandrine-443321381?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' },
-  { name: 'Instagram', link: 'https://www.instagram.com/____1ngabire?igsh=MXJ1ZGE0a2g1bmJsMg%3D%3D&utm_source=qr' },
-];
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
